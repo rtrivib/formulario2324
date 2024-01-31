@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8"> <!-- esta linea es obligatoria para no tener problemas con las letras españolas -->
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- etiqueta ajustable responsiva de mi sitio web -->
+    	<title>Document</title>
+	<link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+<body>
+    <h1>FORMULARIO</h1>
+    
+<form>
+    <label for="fname">Nombre: </label>
+    <input type="text" id="fname" name="fname">
+</form>
+<br>
+<form>
+    <label for="pais">Elige pais:</label>
+    <select id="pais" name="pais" size="3">
+        <option value="españa">España</option>
+        <option value="portugal">Portugal</option>
+        <option value="francia">Francia</option>
+        <option value="italia">Italia</option>
+    </select>
+</form>
+<br>
+<form>
+    <textarea name="message" rows="5" cols="15">
+        Escribe tu dirección
+    </textarea>
+</form>
+<br>
+<form>
+    <button type="button" onclick="alert('Sus datos son correctos')">Enviar datos</button>
+</form>
+<br>
+<form>
+    <fieldset>
+        <legend>Escribe tu nombre:</legend>
+        <label for="fname">Nombre:</label><br>
+        <input type="text" id="fname" name="fname" value="nombre"><br>
+        <label for="lname">Apellidos:</label><br>
+        <input type="text" id="lname" name="lname" value="apellidos"><br><br>
+        <input type="submit" value="Enviar">
+    </fieldset>
+</form>
+<br>
+<form>
+    <input list="ciudad" name="ciudad">
+    <datalist id="ciudad">
+      <option value="Don Benito">
+      <option value="Badajoz">
+      <option value="Cáceres">
+      <option value="Mérida">
+      <option value="Plasencia">
+    </datalist>
+    <input type="submit">
+</form>
+<br>
+
+<form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+<br>
+
+<form>
+    <label for="portatiles">Marca de portátiles:</label>
+    <select  name="portatiles" id="portatiles">
+    <optgroup label="Portátiles HP">
+    <option value="HP15">HP 15</option>
+    <option value="HP16">HP 16</option>
+    </optgroup>
+    <optgroup label="Portátiles APPLE">
+    <option value="MacBook1">Mac Book 1</option>
+    <option value="MacBook2">Mac Book 2</option>
+    </optgroup>
+    </select>
+</form>
+   
+</body>
+
+</html>
